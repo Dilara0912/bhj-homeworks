@@ -2,15 +2,17 @@ body {
   font-family: Arial;
 }
 .item {
-  display: flex;
+  display: block;
 }
 
 .item__code {
   margin-right: 5px;
   font-weight: bold;
+  display: inline-block;
 }
 .item__value {
   margin-right: 5px;
+  display: inline-block;
 }
 
 .loader {
@@ -19,4 +21,14 @@ body {
 }
 .loader_active {
   display: block;
+}
+
+.item__currency {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.item__block {
+  display: block;
+  margin-bottom: 10px;
 }
