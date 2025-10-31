@@ -1,11 +1,11 @@
 const redactor = document.getElementById('editor');
 const storedText = localStorage.getItem('text');
-
-if (storedText){
-    redactor.value = storedText;
-}
+redactor.value = storedText;
+// if (storedText){
+//     redactor.value = storedText;
+// }
 
 redactor.addEventListener('input', () => {     
-    const text = document.getElementById('editor').value;    
+    const text = redactor.value;    
     localStorage.setItem('text', text);
 })
